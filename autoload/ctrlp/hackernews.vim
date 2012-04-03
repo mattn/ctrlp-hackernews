@@ -20,7 +20,7 @@ else
 endif
 
 function! ctrlp#hackernews#init()
-  let dom = xml#parseURL("http://news.ycombinator.com/rss")
+  let dom = webapi#xml#parseURL("http://news.ycombinator.com/rss")
 	let s:feed = map(dom.childNode().childNodes('item'), '[
   \ v:val.childNode("title").value(),
   \ v:val.childNode("link").value()
