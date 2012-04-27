@@ -1,1 +1,1 @@
-command! HackerNews cal ctrlp#init(ctrlp#hackernews#id())
+command! CtrlPHackerNews cal ctrlp#init(ctrlp#hackernews#id())
